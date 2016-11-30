@@ -1,0 +1,15 @@
+{
+  "name": "hubtm",
+  "version": "1.0.0",
+  "description": "github tag management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "packTm": "webpack --config webpack.config.js"
+  },
+  "author": "Jeremy Fletcher",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^2.1.0-beta.27"
+  }
+}
