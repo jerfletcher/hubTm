@@ -9,6 +9,6 @@ export default function(options,content){
 	},options);
 
 	if(urlPattern){
-		contant();
+		content();
 	}
 }
