@@ -15,5 +15,9 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/jerfletcher/hubTm.git"
+  },
+  "config": {
+    "site": "today",
+    "minify": false
   }
 }
