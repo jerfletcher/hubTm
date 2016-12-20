@@ -8,5 +8,6 @@
     cd /vagrant
     npm install
 
-## Build
-    npm run packTm
+## Build a Bundle
+    node bundle [project] [-dev]
+    ex. node bundle today -dev
