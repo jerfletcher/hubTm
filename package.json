@@ -10,14 +10,12 @@
   "author": "Jeremy Fletcher",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^0.26.1",
+    "html-loader": "^0.4.4",
     "webpack": "^2.1.0-beta.27"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/jerfletcher/hubTm.git"
-  },
-  "config": {
-    "site": "today",
-    "minify": false
   }
 }
