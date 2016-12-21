@@ -10,7 +10,8 @@ var plugins = [];
 var isDev = false;
 
 process.argv.forEach(function (val, index, array) {
-  if ((val === 'bundle') && (typeof process.argv[index + 1] !== "undefined")) {
+  const splitted = val.split('/');
+  if ((splitted[splitted.length - 1] === 'bundle') && (typeof process.argv[index + 1] !== "undefined")) {
     options.site = process.argv[index + 1];
   }
 
