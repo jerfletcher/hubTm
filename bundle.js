@@ -51,6 +51,12 @@ const wpConfig = {
     loaders: [{
       test: /\.css$/,
       loader: "css-loader"
+    },{
+      test: /\.html/,
+      loader: "html-loader"
+    }, {
+      test: /\.jpg$/,
+      loader: "file-loader"
     }]
   },
   "plugins": plugins
