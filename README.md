@@ -6,13 +6,13 @@
 
 ## Goals
 *   Brand and Team independent (distinct repos)
-*   Ads and DTM script replacement
+*   Ads (MPS) and DTM script replacement
 *   Easy dev and test setup
-*   Respect file extensions (.js, .css, .html)
+*   Programmatically specify dependencies
 *   Minify option
 *   Release tracking (via Git releases)
-*   Programmatically specify dependencies
 *   Facilitate code reuse
+*   Respect file extensions (.js, .css, .html)
 *   Shared logic for display/launch rules
 *   Nice to have: Introspection via browser console
 *   Nice to have: Analytics
