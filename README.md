@@ -5,7 +5,8 @@
 
 
 ## Goals
-*   Brand Platform independent
+*   Brand and Team independent (distinct repos)
+*   Ads and DTM script replacement
 *   Easy dev and test setup
 *   Respect file extensions (.js, .css, .html)
 *   Minify option
