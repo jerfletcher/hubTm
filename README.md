@@ -28,3 +28,9 @@
 ## Build a Bundle
     node bundle [project] [-dev]
     ex. node bundle today -dev
+
+## Next Steps
+*   Incorporate actual Ad code
+*   Create NPM component and split repo
+*   Work with Ops on deployemnt process (Github release mechanism + server buildout + file copy + redirect)
+*   Lazy loading mechanism?
