@@ -1,7 +1,7 @@
 # hubTm
     Packager for browser js, css, html
 
-![alt text](https://www.dropbox.com/s/6tzd030mq2w5vr7/hub.jpg?dl=1 "Architecture")
+![alt text](https://docs.google.com/drawings/d/1Vv341Zr22ccehyCmahUQ7_kXvsVZk4JSXFoj44y45FM/pub?w=452&h=719 "Architecture")
 
 
 ## Goals
