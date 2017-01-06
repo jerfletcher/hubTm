@@ -1,5 +1,11 @@
-import adobeAppM from 'tm_modules/adobeAppMeasurement';
-adobeAppM({
-	urlPattern: 'www\.today\.com'
-});
-window.important = {setting:'3',morelongthings:'hey there'}
+import * as basic from 'tm_tools/basicUtils';
+import controller from "tm_modules/today/ads/ad-controller";
+
+var dependModules = [
+    'mps',
+    'jQuery',
+    'Backbone',
+    'jQuery.waypoints' //jquery version of waypoints
+];
+
+basic.runWhenAvailable( dependModules, controller);
