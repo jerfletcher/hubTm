@@ -31,8 +31,8 @@
     ex. node bundle today -dev
 
 ## Next Steps
-*   Incorporate actual Ad code
-*   add relative path imgs to dist
+*   ~~Incorporate actual Ad code~~
+*   ~~add relative path imgs to dist~~
 *   automate deployment
 *   Refactor display/launch rules (optionsManager)
 *   Create NPM component and split repo
