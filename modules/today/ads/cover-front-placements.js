@@ -1,4 +1,4 @@
-import * as utils from 'tm_tools/basicUtils';
+import * as utils from 'lib/basicUtils';
 /* Tablet / Desktop - Cover / Fronts / Concert Series - other form factors @ app/scripts/mobile/cover-front-placements.js */
 
 export default function() {

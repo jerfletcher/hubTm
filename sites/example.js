@@ -1,3 +1,3 @@
-import stuff from "tm_modules/example/stuff/module.js";
+import stuff from "modules/example/stuff/module.js";
 
 stuff();

@@ -39,8 +39,9 @@ const wpConfig = {
   context: __dirname,
   entry: "./sites/" + options.site + ".js",
   output: {
-    "path": __dirname + '/dist',
-    "filename":  filename
+    "path": __dirname + '/dist/' + options.site + '/',
+    "filename":  filename,
+    "publicPath": '/' + options.site + '/'
   },
   resolve: {
     modules: [
@@ -50,13 +51,13 @@ const wpConfig = {
   module: {
     loaders: [{
       test: /\.css$/,
-      loader: "css-loader"
+      loader: "style-loader!css-loader"
     },{
       test: /\.html/,
       loader: "html-loader"
     }, {
-      test: /\.jpg$/,
-      loader: "file-loader"
+      test: /\.(png|jpg|jpeg|gif|woff)$/,
+      loader: "file-loader?name=[name].[ext]"
     }]
   },
   "plugins": plugins
@@ -70,6 +71,9 @@ compiler.run(function(err, stats) {
     console.log(stats);
   }
 });
+
+
+
 
 /**
  We could also do
