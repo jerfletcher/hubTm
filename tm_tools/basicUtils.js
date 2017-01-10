@@ -44,7 +44,14 @@ export function runWhenAvailable(dependencyList, callback) {
     var INTERVAL = 250;
     var times = 0;
 
+    /**promiselike**/
+    var handlers = {
+      success : function(/*output*/) {},
+      fail : function(err) {info.log(err);}
+    }
+
     function checkAllAndRun() {
+
         if (loadedModules.length == requiredCnt) {
             var l;
             var allgood = true;
@@ -57,11 +64,13 @@ export function runWhenAvailable(dependencyList, callback) {
 
             if (allgood || (times == MAX_WAITS)) { //run anyway, even if not everything is loaded
                 if(times == MAX_WAITS) {
-                    info.log('running with missing modules');
+                  handlers.fail('running with missing modules');
                 }
                 checkAllAndRun = function() { }; //run only once
                 checkAndWait = function() { }; //run only once
-                setTimeout(function() { callback.apply(null, loadedModules); }, 0);
+
+                //TODO:: resolve promise with return value from callback
+                setTimeout(function() { handlers.success(callback.apply(null, loadedModules)); }, 0);
             }
         }
     }
@@ -89,4 +98,6 @@ export function runWhenAvailable(dependencyList, callback) {
     for(i = 0; i < requiredCnt; i++) {
       checkAndWait(dependencyList[i], i);
     }
+
+    return handlers;
 }
