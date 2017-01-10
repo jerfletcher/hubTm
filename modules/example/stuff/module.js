@@ -1,6 +1,6 @@
-import * as utils from 'tm_tools/basicUtils';
+import * as utils from 'lib/basicUtils';
 import banner from "./banner.html";
-import styles from "style-loader!./sidebar.css";
+import styles from "./sidebar.css";
 import sidebar from "./sidebar.html";
 
 export default function() {

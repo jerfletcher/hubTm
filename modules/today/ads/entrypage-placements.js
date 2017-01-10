@@ -1,4 +1,4 @@
-import * as utils from 'tm_tools/basicUtils';
+import * as utils from 'lib/basicUtils';
 /* Mobile / Tablet - Articles - other form factors @ app/scripts/desktop/ads/entrypage-placements.js */
 
 export default function() {

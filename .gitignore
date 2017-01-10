@@ -25,7 +25,7 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
-#dist forlder
+#dist folder
 dist
 
 #vagrant machine

@@ -1,4 +1,4 @@
-import * as utils from 'tm_tools/basicUtils';
+import * as utils from 'lib/basicUtils';
 
 /* used with all instances of [appType]-placements.js */
 export default function() {
