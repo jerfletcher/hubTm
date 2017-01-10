@@ -1,15 +1,14 @@
 import * as utils from 'tm_tools/basicUtils';
 
+/* used with all instances of [appType]-placements.js */
 export default function() {
-  /* used with all instances of [appType]-placements.js */
-  utils.runWhenAvailable([
+  return utils.runWhenAvailable([
     'mps',
     'jQuery',
     'Backbone',
     'jQuery.waypoints' //jquery version of waypoints
   ], function (mps, jQuery, Backbone, waypoints) {
     var AdController = Backbone.View.extend({
-
       responsiveSetSize: null,
       discussionsOnEntry: null,
       initialAdsRequested: null,
