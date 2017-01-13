@@ -36,5 +36,5 @@
 *   automate deployment
 *   Refactor display/launch rules (optionsManager)
 *   Create NPM component and split repo
-*   Work with Ops on deployemnt process (Github release mechanism + server buildout + file copy + redirect)
+*   Work with Ops on deployment process (Github release mechanism + server buildout + file copy + redirect)
 *   Lazy loading mechanism
